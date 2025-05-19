@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Header from "./components/Header";
 import Gallery from "./components/Gallery";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -11,7 +12,6 @@ export default function Home() {
           <source src="/money-promo.mp4" type="video/mp4"></source>
           your browser does
         </video>
-        
       </div>
       <Header />
       <div className="min-w-100 min-h-120 bg-slate-50 text-slate-900">
@@ -36,9 +36,10 @@ export default function Home() {
           <Gallery />
         </div>
       </div>
-      <div className="min-w-100 min-h-120">
+      <div className="min-w-100 min-h-120 shadow-md">
         <div className="container mx-auto p-4 pt-15">
-          <h1 className="text-center">Contact</h1>
+          <h1 className="text-center">Get In Touch</h1>
+          <Footer />
         </div>
       </div>
     </>

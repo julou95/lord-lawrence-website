@@ -33,7 +33,7 @@ function Header() {
                     <a href={'https://mx3.ch/lordlawrencethelardguitar'} target="_blank" className="mr-4">
                         <Mx3Logo filled={scrolled} />
                     </a>
-                    <a href={'https://open.spotify.com/artist/1k4FnGJS0FNsIGuN6uZE6Q?si=htultynnQDevw63bVi_QUA'} target="_blank"  className="mr-4">
+                    <a href={'https://open.spotify.com/artist/1k4FnGJS0FNsIGuN6uZE6Q?si=htultynnQDevw63bVi_QUA'} target="_blank" className="mr-4">
                         <SpotifyLogo filled={scrolled} />
                     </a>
                     <a href={'https://www.instagram.com/lordlawrenceband'} target="_blank">
