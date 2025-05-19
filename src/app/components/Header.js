@@ -20,7 +20,7 @@ function Header() {
         return () => {
             window.removeEventListener("scroll", onScroll, { passive: true })
         }
-    }, [])
+    }, [onScroll])
 
     return (
         <div className={`sticky top-0 left-0 right-0 transition-colors duration-300 shadow-md p-4 sm:p-5 md:p-6 lg:p-8 ${scrolled ? 'bg-neutral-950 text-white' : 'bg-slate-50 text-neutral-950'}`}>

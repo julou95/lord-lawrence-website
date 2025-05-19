@@ -13,7 +13,8 @@ const geistMono = Geist_Mono({
 
 const antonSC = Anton_SC({
   variable: "--font-anton-sc",
-  weight: "400"
+  weight: "400",
+  subsets: ["latin"],
 })
 
 export const metadata = {

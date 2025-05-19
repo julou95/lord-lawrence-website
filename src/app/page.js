@@ -17,11 +17,11 @@ export default function Home() {
       <div className="min-w-screen min-h-120 bg-slate-50 text-slate-900">
         <div className="container flex flex-col lg:flex-row mx-auto p-4 pt-15">
             <div className="lg:mr-10 basis-1/2">
-              <Image src={'/group.jpg'} width={0} height={0} sizes="100vw" className="mb-10 w-[100%] h-auto rounded-lg" />
+              <Image src={'/group.jpg'} width={0} height={0} sizes="100vw" className="mb-10 w-[100%] h-auto rounded-lg" alt="group picture" />
             </div>
             <span className="text-lg lg:text-xl basis-1/2 mb-20">
               <h1 className="text-center lg:text-left">About</h1>
-              Since their formation in 2023, the four enthusiastic musicians have been transporting audiences into a world in which the D-standard guitars and hard drum beats invite you to headbang along. The band feels at home in stoner rock, although other musical genres can also be heard in the songs. The gripping melodies are guaranteed to reverberate in your ears even after the concert. Look forward to an exciting, varied concert that you won't forget in a hurry.</span>
+              Since their formation in 2023, the four enthusiastic musicians have been transporting audiences into a world in which the D-standard guitars and hard drum beats invite you to headbang along. The band feels at home in stoner rock, although other musical genres can also be heard in the songs. The gripping melodies are guaranteed to reverberate in your ears even after the concert. Look forward to an exciting, varied concert that you won&apos;t forget in a hurry.</span>
         </div>
       </div>
       <div className="min-w-screen min-h-120">
