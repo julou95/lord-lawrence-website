@@ -1,19 +1,35 @@
+'use client'
+
+import { useEffect, useCallback, useState } from "react";
 import Image from "next/image";
 import Header from "./components/Header";
 import Gallery from "./components/Gallery";
 import Footer from "./components/Footer";
 
 export default function Home() {
+  const [scrolled, setScrolled] = useState(false);
+
+  const onScroll = useCallback(event => {
+      const { scrollY, innerHeight } = window;
+      setScrolled(scrollY >= innerHeight)
+  }, []);
+
+  useEffect(() => {
+      window.addEventListener("scroll", onScroll, { passive: true });
+      return () => {
+          window.removeEventListener("scroll", onScroll, { passive: true })
+      }
+  }, [onScroll])
+
   return (
     <>
       <div className="min-w-100 xxl:min-w-max min-h-screen overflow-y-hidden overflow-x-hidden bg-black flex justify-center items-center">
-        <div className="absolute container text-8xl lg:text-[150px] text-shadow-lg/60 font-(family-name:--font-anton-sc) p-9">Lord Lawrence & The Lard Guitar</div>
+        <div className="absolute container text-7xl sm:text-8xl md:text-9xl lg:text-[150px] text-shadow-lg/60 font-(family-name:--font-anton-sc) p-9">Lord Lawrence & The Lard Guitar</div>
         <video className="min-h-screen object-cover" autoPlay muted loop>
           <source src="/money-promo.mp4" type="video/mp4"></source>
-          your browser does
         </video>
       </div>
-      <Header />
+      <Header scrolled={scrolled} />
       <div className="min-w-100 min-h-120 bg-slate-50 text-slate-900">
         <div className="container flex flex-col lg:flex-row mx-auto p-4 pt-15">
             <div className="lg:mr-10 basis-1/2">
