@@ -26,7 +26,7 @@ export default function Footer() {
                 <a href={'https://open.spotify.com/artist/1k4FnGJS0FNsIGuN6uZE6Q?si=htultynnQDevw63bVi_QUA'} target="_blank" className="p-5 hover:bg-neutral-700"><SpotifyLogo filled /></a>
                 <a href={'https://www.instagram.com/lordlawrenceband'} target="_blank" className="p-5 hover:bg-neutral-700"><InstagramLogo filled /></a>
             </div>
-            <div className="flex justify-center mt-5 mb-2 border-t-2 border-neutral-700 pt-4">&copy; Lord Lawrence & The Lard Guitar | made with&nbsp;<span onClick={() => setCounter(counter+1)}>{counter === 10 ? '🍆' : '❤️'}</span></div>
+            <div className="flex justify-center mt-5 mb-2 text-sm sm:text-lg border-t-2 border-neutral-700 pt-4">&copy; Lord Lawrence & The Lard Guitar | made with&nbsp;<span onClick={() => setCounter(counter+1)}>{counter === 10 ? '🍆' : '❤️'}</span></div>
         </>
     )
 }
